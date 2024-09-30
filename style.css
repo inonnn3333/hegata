@@ -7,16 +7,16 @@ body {
     align-items: center;
     background: url('img.png') no-repeat center center fixed;
     background-size: cover;
+    /* background-position: 0 -8em; */
     /* filter: blur(8px); */
-    /* טשטוש של תמונת הרקע */
 }
 
 .overlay {
-    /* background-color: rgba(0, 0, 0, 0.6); */
-    /* חצי שקוף */
-    padding: 40px;
-    border-radius: 10px;
+    /* padding: 40px; */
+    /* border-radius: 10px; */
     z-index: 1;
+    padding-top: 8em;
+    /* background-color: #8b3434; */
 }
 
 .button-container {
@@ -32,9 +32,8 @@ body {
     justify-content: center;
     background-color: #fff;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    overflow: hidden;
+    width: 4em;
+    /* overflow: hidden; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
@@ -42,6 +41,12 @@ body {
 .icon-wrapper:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.icon-wrapper a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .icon-wrapper a img {
@@ -61,15 +66,3 @@ body {
 .icon-button i {
     pointer-events: none;
 } */
-
-.apple {
-    color: #000;
-}
-
-.youtube {
-    color: #FF0000;
-}
-
-.spotify {
-    color: #1DB954;
-}
