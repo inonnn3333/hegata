@@ -1,14 +1,15 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: url('img.png') no-repeat center center fixed;
-    background-size: cover;
+    align-items: flex-start;
+    /* background: url('img.png') no-repeat center center fixed;
+    background-size: cover; */
     /* background-position: 0 -8em; */
     /* filter: blur(8px); */
+    /* background-color: #480d0d; */
 }
 
 .overlay {
@@ -17,6 +18,19 @@ body {
     z-index: 1;
     padding-top: 8em;
     /* background-color: #8b3434; */
+}
+
+.img {
+    /* background-color: #a45959; */
+    height: 15em;
+    width: 100%;
+    overflow: hidden;
+    /* padding-bottom: 2em; */
+}
+
+.img img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .button-container {
